@@ -1,0 +1,12 @@
+# Add this to ~/.ssh/config (or C:\Users\YourName\.ssh\config on Windows)
+
+Host pi
+    HostName 10.0.0.54
+    User pi
+    IdentityFile ~/.ssh/pi_display_key
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+# Then you can use:
+# ssh pi
+# scp ink.py pi:~/
